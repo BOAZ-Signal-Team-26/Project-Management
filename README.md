@@ -22,6 +22,8 @@
 | [docs/02-notion-structure.md](docs/02-notion-structure.md) | Notion DB 실제 구조: 각 DB의 속성, 선택지, 템플릿 |
 | [docs/03-workflow.md](docs/03-workflow.md) | 현재 운영 방식: Epic→Sprint→Ticket 관계, 정례 주기, 문서 분리 원칙 |
 | [docs/04-proposals.md](docs/04-proposals.md) | 미합의 제안: 브랜치·커밋 컨벤션, 티켓 네이밍, 착수/완료 조건 등 |
+| [docs/05-timeline.md](docs/05-timeline.md) | 타임라인: Phase 구분, 스프린트 달력, 마일스톤, Epic 목록, 기술 결정 기한, 축소 순서 |
+| [docs/06-wbs.md](docs/06-wbs.md) | WBS: 구간별 작업 분해(2단계), 트랙 구조, 여유 0 구간, 미합의 제안 7건 |
 
 ## 템플릿
 
