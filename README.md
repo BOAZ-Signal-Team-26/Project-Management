@@ -25,7 +25,7 @@
 | [docs/05-timeline.md](docs/05-timeline.md) | 타임라인: Phase 구분, 스프린트 달력, 마일스톤, Epic 목록, 기술 결정 기한, 축소 순서 |
 | [docs/06-wbs.md](docs/06-wbs.md) | WBS: 구간별 작업 분해(2단계), 트랙 구조, 여유 0 구간, 미합의 제안 7건 |
 | [docs/07-sprint-plan.md](docs/07-sprint-plan.md) | 스프린트별 티켓·작업 계획 |
-| [docs/08-m1-decisions.md](docs/08-m1-decisions.md) | M1 결정 전 확인 사항: 검증 트랙 노선, CDI 산출 단위 |
+| [docs/08-m1-decisions.md](docs/08-m1-decisions.md) | 데이터 테이블·ERD 설계 확정 점검 결정 전 확인 사항: 검증 트랙 노선, CDI 산출 단위 |
 | [docs/09-plan-review/](docs/09-plan-review/00-summary.md) | 외부 자문 4인의 계획 검토 (2026-09-08): 종합 + 관점별 보고서 4건 |
 
 ## 템플릿
