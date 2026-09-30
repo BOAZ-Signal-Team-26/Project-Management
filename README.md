@@ -1,6 +1,6 @@
 # Project-Management
 
-판매 중인 금융상품 설명서를 전수 채점해 부·절마다 설명 난독성 점수를 산출하는 파이프라인 프로젝트의 계획 저장소.
+판매 중인 금융상품 설명서를 전수 채점해 절마다 설명 난독성 점수를 산출하는 파이프라인 프로젝트의 계획 저장소.
 상세 전제: [signal-pipeline 「프로젝트 전제」](https://github.com/BOAZ-Signal-Team-26/signal-pipeline/blob/main/docs/README.md)
 
 ## 현재 개요 (Week 4 기준)
