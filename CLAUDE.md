@@ -42,3 +42,17 @@ Notion 티켓·회의록·문서, GitHub PR·이슈 본문, 저장소 안 문서
 - 다른 문서가 링크하는 폴더·파일 이름
 
 올리기 전에 위 항목을 다시 확인하고, 어긋난 부분을 고친 뒤 올린다.
+
+## 이 저장소 작업 지침
+
+- 목적: 일정·WBS·스프린트·운영 규칙(`README.md`). 설계·ERD 숫자의 정본은 signal-pipeline `docs/`. 이 저장소는 링크만 둠
+- 정본: `docs/05-timeline.md`(일정), `docs/06-wbs.md`·`docs/07-sprint-plan.md`(작업 분해, Notion 티켓의 원본), `docs/03-workflow.md`·`docs/04-proposals.md`·`templates/`(운영 규칙)
+- 회의록·티켓 상태·스프린트 문서·Epic 진행 상태의 정본은 Notion. 저장소에 복사하지 않음(`README.md` 「정본 위치」)
+- 기록 문서(`01`, `02`, `03`, `08`, `09-plan-review`)는 고치지 않음. `09-plan-review`는 외부 자문 원문
+- 운영 규칙 변경 순서: 회고에서 문제 제기, 팀 합의, 이 저장소 PR, Notion 반영(`README.md`)
+- `agents/tpm-doc-ko.md`나 `templates/`의 규칙을 바꾸면 다른 두 저장소 `CLAUDE.md`의 문서 작성 규칙 요약도 같이 수정
+- 브랜치: main(배포), dev(통합). 작업 PR은 dev 대상. dev는 직접 푸시 가능. main은 CI 통과와 PR 대화 해결 필수(`docs/04-proposals.md` 1-3절, 9월 29일 확정)
+- 이슈를 먼저 만든 뒤 브랜치 `<타입>/#<이슈 번호>-<설명>`(예: `docs/#42-erd-v2.2`), 커밋 `#<이슈 번호> <타입>: <한국어 설명>`. 타입은 feat·fix·docs·chore(`docs/04-proposals.md` 1-1·1-2절, 10월 4일 확정)
+- PR·이슈 제목은 `[Feat|Fix|Docs|Chore|Release] 내용`. 라벨은 제목 접두어로 자동 부여(`auto-label.yml`). 형식 위반 시 봇 댓글(`title-guard.yml`, 차단 없음)
+- 제안(미합의) 항목을 확정 규칙처럼 쓰지 않음. 합의 여부는 `docs/04-proposals.md` 상태 줄로 판별
+- CodeRabbit이 dev 대상 PR을 한국어로 리뷰(`.coderabbit.yaml`)
