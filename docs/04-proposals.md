@@ -1,33 +1,36 @@
 # 제안 (미합의)
 
-**최종 업데이트:** 2026-08-12
+**최종 업데이트:** 2026-10-04
 
-## 1. Git 워크플로우 컨벤션 (1-3절 PR 규칙만 확정)
+## 1. Git 워크플로우 컨벤션 (1-1·1-2·1-3절 확정)
 
-**상태:** 1-3절 PR 규칙 확정(9월 29일). 1-1·1-2절은 팀이 정한 기록 없음
+**상태:** 1-3절 PR 규칙 확정(9월 29일). 1-1·1-2절 확정(10월 4일 PM(대현). 9월부터 세 저장소에서 써 온 형식을 규칙으로 올림)
 
 ### 1-1. 브랜치 명명 규칙
 
-**제안:** 작업 유형 + 설명
+**결정 (10월 4일):** `<타입>/#<이슈 번호>-<설명>`
+- 타입: `feat`, `fix`, `docs`, `chore` (PR 제목 접두어와 같은 목록)
+- 이슈를 먼저 만들고 그 번호를 넣음
+- 설명은 영어 소문자와 하이픈
+- 예외: dev → main 릴리스 PR은 dev 브랜치를 그대로 씀
 
 ```
-feat/add-anomaly-detection-model
-fix/fix-data-validation-bug
-docs/update-readme
-refactor/simplify-preprocessing
-ci/add-test-pipeline
+docs/#42-erd-v2.2
+chore/#37-auto-label
+fix/#12-kofia-truncated-response
 ```
 
 ### 1-2. 커밋 메시지 형식
 
-**제안:** 타입 + 설명 + (선택) 본문
+**결정 (10월 4일):** `#<이슈 번호> <타입>: <한국어 설명>` + (선택) 본문
+- 타입은 1-1과 같은 목록
+- 설명은 무엇을 바꿨는지 한국어로 한 줄
+- 커밋 훅을 우회하지 않음
 
 ```
-feat: add anomaly detection model for fraud detection
+#42 docs: 운용사 연결 순서 결정, distributor에 공시 운용사 코드 칼럼 추가
 
-- Implement isolation forest model
-- Add model evaluation metrics
-- Update documentation
+- 표준코드 운용사 자리는 설정 당시 운용사라 1단계는 공시 코드로 연결
 ```
 
 ### 1-3. PR 리뷰 규칙

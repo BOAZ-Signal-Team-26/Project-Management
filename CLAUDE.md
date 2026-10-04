@@ -52,7 +52,7 @@ Notion 티켓·회의록·문서, GitHub PR·이슈 본문, 저장소 안 문서
 - 운영 규칙 변경 순서: 회고에서 문제 제기, 팀 합의, 이 저장소 PR, Notion 반영(`README.md`)
 - `agents/tpm-doc-ko.md`나 `templates/`의 규칙을 바꾸면 다른 두 저장소 `CLAUDE.md`의 문서 작성 규칙 요약도 같이 수정
 - 브랜치: main(배포), dev(통합). 작업 PR은 dev 대상. dev는 직접 푸시 가능. main은 CI 통과와 PR 대화 해결 필수(`docs/04-proposals.md` 1-3절, 9월 29일 확정)
-- 브랜치 이름·커밋 메시지 형식: 팀 결정 기록 없음(`docs/04-proposals.md` 1-1·1-2절, 제안 단계). 실제 이력의 관례는 브랜치 `docs/#42-erd-v2.2`, 커밋 `#42 docs: 설명` 형식
+- 이슈를 먼저 만든 뒤 브랜치 `<타입>/#<이슈 번호>-<설명>`(예: `docs/#42-erd-v2.2`), 커밋 `#<이슈 번호> <타입>: <한국어 설명>`. 타입은 feat·fix·docs·chore(`docs/04-proposals.md` 1-1·1-2절, 10월 4일 확정)
 - PR·이슈 제목은 `[Feat|Fix|Docs|Chore|Release] 내용`. 라벨은 제목 접두어로 자동 부여(`auto-label.yml`). 형식 위반 시 봇 댓글(`title-guard.yml`, 차단 없음)
 - 제안(미합의) 항목을 확정 규칙처럼 쓰지 않음. 합의 여부는 `docs/04-proposals.md` 상태 줄로 판별
 - CodeRabbit이 dev 대상 PR을 한국어로 리뷰(`.coderabbit.yaml`)
